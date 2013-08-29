@@ -55,7 +55,7 @@ module.exports = function(grunt) {
       fs.unlinkSync(stackFile);
     }
 
-    var hoodieProcess = exec('hoodie start', function(error, stdout, stderr) {
+    var hoodieProcess = exec('npm start', function(error, stdout, stderr) {
       console.log('stdout: ' + stdout);
       console.log('stderr: ' + stderr);
       if (error !== null) {
